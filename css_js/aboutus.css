@@ -28,7 +28,24 @@ li {
   font-weight: bolder;
   font-size: 60px;
 }
+
+.container {
+  text-align: center;
+  margin: auto;
+}
+
 .personalInfo {
+  display: inline-block;
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 10px;
+  /* margin-left: 40px; */
+}
+
+/* .personalInfo {
   display: block;
   width: 700px;
   text-align: center;
@@ -36,7 +53,8 @@ li {
   align-items: center;
   align-content: center;
   margin: auto;
-}
+} */
+
 .personalInfo ul:hover {
   color: white;
 }

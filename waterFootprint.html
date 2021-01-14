@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Footprint Project</title>
     <script src="css_js/main.js" defer></script>
+    <script src="css_js/sound.js" defer></script>
     <link rel="stylesheet" href="css_js/style.css">
     <link rel="stylesheet" href="css_js/definition.css">
 
@@ -20,15 +21,20 @@
 <body>
     <header>
         <nav class="index">
-            <!-- 아이콘은 i태그를 쓴다. -->
-            <!-- <i class="brightness"> <img src="light.png"> </i> -->
-            <i class="fas fa-tint"></i>
+            <!-- <i class="fas fa-tint"></i> -->
+
+            <img src="images/waterdrop.png" id="waterdrop">
+            <audio id="player" loop>
+                <source src="images/WaterDrop.mp4" />
+            </audio>
+
+
             <a href="main.html" class="logo">
-                <img src="logo.svg">
+                <img src="images/logo.svg">
             </a>
 
             <a href="#" class="index_bar">
-                <img src="index.png">
+                <img src="images/index.png">
             </a>
 
         </nav>
@@ -37,13 +43,13 @@
     <nav>
         <ul class="index_menu">
             <li><a href="waterFootprint.html">물 발자국이란?</a></li>
-            <hr align="right" style="border: solid 1.2px black;">
-            <li><a href="">발자국 계산기</a></li>
-            <hr align="right" style="border: solid 1.2px black;">
-            <li><a href="">발자국 줄이기</a></li>
-            <hr align="right" style="border: solid 1.2px black;">
-            <li><a href="">기부하기</a></li>
-            <hr align="right" style="border: solid 1.2px black;">
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="WaterFootprint_cal.html">발자국 계산기</a></li>
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="WaterFootprint_reduce.html">발자국 줄이기</a></li>
+            <hr align="right" style="border: solid 1px black;">
+            <li><a href="WaterFootprint_donate.html">기부하기</a></li>
+            <hr align="right" style="border: solid 1px black;">
             <li><a href="aboutUs.html">만든 사람들</a></li>
             <!-- <hr align="right" style="border: solid 1.5px;"> -->
         </ul>
@@ -67,8 +73,6 @@
         <span class="def_line">물 발자국</span>이란?<br>
     </div>
 
-    <audio src="WaterDrop.mp4" control autoplay loop></audio>
-
     <div class="main_text">
         <p>
             물 발자국이란 제품의 원료, 제조, 유통, 사용과 폐기까지 모든 과정에서 사용되는
@@ -78,15 +82,16 @@
             이를 통해 제품의 생산, 소비 단계별 물이용의 효율성을 평가할 수 있고,
             선진국과 저개발국 사이의 물사용 불균형을 설명할 수 있습니다.
         </p>
-        <!-- <p>
-            Water footprints can be calculated for an individual person, a process, a product’s entire value chain or
-            for a
-            business, a river basin or a nation. They provide powerful insights for businesses to understand their
-            water-related business risk, for governments to understand the role of water in their economy and water
-            dependency, and for consumers to know how much water is hidden in the products they use. Most importantly,
-            they
-            help drive strategic action toward sustainable, efficient and equitable water use.
-        </p> -->
+        <br><br>
+
+        <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/embed/6JhlEg7G4MY?start=2" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- <iframe width=100vh; height="100vh" src="https://www.youtube.com/embed/6JhlEg7G4MY?start=2" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
     </div>
     <div class="main_text">
         <!-- <h3>3가지 물 발자국 </h3> -->
@@ -97,9 +102,9 @@
             <span style="color: rgb(119, 119, 119); font-weight: bolder;">회색</span>의 세 가지 구성요소로 정의됩니다. <br>
             이들 구성 요소는 강우량, 토양의 수분량 또는 지표수, 지하수, 오염물질 제거에 필요한 물의 양을 기술함으로써 물 사용량에 대한 종합적인
             틀을 제공합니다.
+
             <br><br>
         </p>
-
         <ul class="kinds">
             <li>
                 <span id="green">녹색 물 발자국 Green water footprint</span> <br>
@@ -150,7 +155,7 @@
     <br><br>
     <div class="link">
         유네스코 물 관련 교육기관인 IHE에서 제공하는 홈페이지에서는 좀 더 다양한 정보를 찾아보실 수 있습니다. <br>
-        <a href="https://www.waterfootprint.org/en/"> Water Footprint Network</a>를 방문하여 더 많은 정보를 찾아보세요.
+        <a href="https://www.waterfootprint.org/en/" target="_blank"> Water Footprint Network</a>를 방문하여 더 많은 정보를 찾아보세요.
     </div>
 </body>
 
